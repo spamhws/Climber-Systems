@@ -281,9 +281,8 @@ header .logo:hover {
   flex-direction: column;
   border: 1px solid darkgray;
   border-radius: 12px;
-  padding: 8px;
-  box-shadow: darkgray;
-  box-shadow: 4px 8px 16px -9px rgba(66, 68, 90, 1);
+  padding: 16px;
+  box-shadow: 4px 8px 16px -9px darkgray;
   transition: transform 0.2s, box-shadow 0.2s; /* Animation */
 }
 
@@ -294,7 +293,7 @@ header .logo:hover {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 6px 12px 16px -12px rgba(66, 68, 90, 1);
+  box-shadow: 6px 12px 16px -12px darkgray;
   z-index: 2;
   background-color: white;
 }

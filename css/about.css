@@ -80,7 +80,7 @@ body {
 }
 
 .entry {
-  margin: 50px 10px;
+  margin: 50px 0px;
   position: relative;
   opacity: 0;
 }
@@ -88,7 +88,7 @@ body {
 /* Scrol Animation */
 
 .entry.active {
-  animation: fade-bottom 1s ease-in forwards;
+  animation: fade-bottom 1s ease-in-out forwards;
 }
 
 @keyframes fade-bottom {
@@ -123,7 +123,7 @@ body {
 }
 
 .date {
-  width: 40%;
+  width: clamp(40%, 350px, 60%);
   margin: 0 auto;
   transform: translate(-58%, -9px);
   font-size: 16px;
@@ -165,8 +165,8 @@ body {
 .logo-section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
-  justify-content: space-around;
+  margin-bottom: 60px;
+  justify-content: space-between;
 }
 
 .logo-section h1 {
@@ -177,27 +177,32 @@ body {
   text-align: center;
 }
 
+.logo-section .bolder {
+  font-weight: bold;
+}
+
 .side-logo {
-  width: 200px;
+  width: clamp(20%, 250px, 80%);
   opacity: 0;
+  margin: 24px 0px;
   position: relative;
   overflow: hidden;
 }
 
 .side-logo.active {
-  animation: logo-reveal 1.5s ease-in-out forwards;
+  animation: logo-reveal 1.5s ease-out forwards;
 }
 
 @keyframes logo-reveal {
   0% {
-    transform: rotate(0deg);
-    left: -500px;
+    transform: rotate(-400deg);
+    left: -700px;
     opacity: 0;
   }
   100% {
-    transform: rotate(720deg);
-    opacity: 1;
+    transform: rotate(0deg);
     left: 0px;
+    opacity: 1;
   }
 }
 
@@ -207,10 +212,99 @@ body {
   margin: auto;
 }
 
+.founders {
+  margin-bottom: 80px;
+}
+
+.founders h1 {
+  font-size: 40px;
+  align-self: stretch;
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.founders p {
+  text-align: center;
+  color: grey;
+  margin-bottom: 24px;
+}
+
+.hint {
+  opacity: 0;
+  transition: 1s ease;
+  transition-delay: 1s;
+}
+
+.hint.active {
+  opacity: 1;
+}
+
+.card {
+  width: clamp(25%, 500px, 90%);
+  padding: 0%;
+  border: none;
+}
+
+.card a {
+  width: 100%;
+  height: auto;
+}
+
+.card img {
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: -50;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  z-index: 5;
+  transition: 0.5s ease;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-overlay h2 {
+  font-size: 36px;
+  color: #f1f1f1;
+  margin: 8px;
+}
+
+.card-overlay > img {
+  align-self: center;
+  width: 80px;
+  margin: 0px;
+  height: auto;
+  filter: invert(100%) sepia(93%) saturate(27%) hue-rotate(151deg)
+    brightness(115%) contrast(89%);
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 650px) {
+  .about-main-pic h1 {
+    font-size: 4rem;
+  }
+
   .timeline {
     margin: 0;
-    width: 60%;
+    width: 65%;
+    position: relative;
+    transform: translateX(-24px);
   }
 
   .date {
@@ -226,5 +320,40 @@ body {
   .entry:nth-child(even) .time,
   .entry:nth-child(odd) .time {
     transform: translate(-130%, -48%);
+  }
+
+  .logo-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+
+  .side-logo {
+    margin: 12px 0px 40px;
+  }
+
+  .logo-section p {
+    font-size: 20px;
+    width: 95%;
+  }
+
+  .card-overlay {
+    max-height: 20%;
+    opacity: 1;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .card-overlay h2 {
+    font-size: 30px;
+    color: #f1f1f1;
+    margin-bottom: 8px;
+  }
+
+  .card-overlay > img {
+    max-width: 30%;
+    width: 64px;
+    height: auto;
   }
 }
