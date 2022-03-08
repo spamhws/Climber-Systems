@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Montserrat", Geneva, Tahoma, sans-serif;
 }
 
 /* html,
@@ -277,7 +277,7 @@ body {
 }
 
 .card-overlay h2 {
-  font-size: 36px;
+  font-size: 40px;
   color: #f1f1f1;
   margin: 8px;
 }
@@ -294,6 +294,25 @@ body {
 .card:hover .card-overlay {
   opacity: 1;
 }
+
+.future {
+  max-width: 95vw;
+  margin-bottom: 80px;
+}
+
+.future h1 {
+  font-size: 40px;
+  align-self: stretch;
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.future p {
+  font-size: 20px;
+}
+
+/* mobile styling below */
 
 @media only screen and (max-width: 650px) {
   .about-main-pic h1 {
@@ -346,7 +365,7 @@ body {
   }
 
   .card-overlay h2 {
-    font-size: 30px;
+    font-size: 28px;
     color: #f1f1f1;
     margin-bottom: 8px;
   }
