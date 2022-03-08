@@ -2,10 +2,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Montserrat", Geneva, Tahoma, sans-serif;
 }
 
 body {
-  font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
 }
