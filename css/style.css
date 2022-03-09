@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #fffaf1;
 }
 
 .centered {
@@ -25,7 +26,7 @@ a {
 .main-header {
   height: 60px;
   width: 100%;
-  background-color: #a3a3a3;
+  background-color: #fffaf1;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -34,10 +35,12 @@ a {
   overflow: hidden;
   padding: 0 18px;
   z-index: 100;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0px 4px 16px -12px #1a1a1a;
 }
 
 header .logo {
-  max-width: 250px;
+  max-width: 300px;
   padding: 0 32px;
   overflow: hidden;
   transition: transform 0.2s;
@@ -51,8 +54,8 @@ header .logo a {
 }
 
 header .logo a img {
-  max-width: 100%;
-  max-height: 55px;
+  width: auto;
+  height: 90%;
   transform: translateY(-0px);
 }
 
@@ -96,6 +99,10 @@ header .logo:hover {
 .navbar ul li a:hover {
   color: #ffffff;
   background-color: rgba(23, 23, 23, 0.9);
+}
+
+#currentsection {
+  text-decoration: underline;
 }
 
 .navbar ul .close {
@@ -295,7 +302,7 @@ header .logo:hover {
   transform: scale(1.05);
   box-shadow: 6px 12px 16px -12px darkgray;
   z-index: 2;
-  background-color: white;
+  background-color: fffaf1;
 }
 
 .card img {
@@ -368,6 +375,7 @@ header .logo:hover {
 
 #form-name,
 #form-email {
+  background-color: #fffaf1;
   width: 44%;
   height: 24px;
   font-size: 16px;
@@ -382,6 +390,7 @@ header .logo:hover {
 }
 
 #form-message {
+  background-color: #fffaf1;
   width: 92%;
   height: 160px;
   text-align: left;
@@ -396,7 +405,7 @@ header .logo:hover {
   font-weight: bold;
   color: #ffffff;
   padding: 8px 32px;
-  background-color: rgb(0, 116, 211);
+  background-color: #7db885;
   border: 1px solid white;
   border-radius: 8px;
 }

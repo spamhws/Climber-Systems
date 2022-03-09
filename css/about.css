@@ -166,7 +166,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo-section h1 {
@@ -184,7 +184,7 @@ body {
 .side-logo {
   width: clamp(20%, 250px, 80%);
   opacity: 0;
-  margin: 24px 0px;
+  margin: 24px;
   position: relative;
   overflow: hidden;
 }
