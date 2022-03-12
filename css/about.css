@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", Geneva, Tahoma, sans-serif;
-}
-
-/* html,
-body {
-  width: 100%;
-  height: 100%;
-} */
-
 .about-main-pic {
   padding-top: 60px;
   overflow-x: hidden;
@@ -297,7 +284,7 @@ body {
 
 .future {
   max-width: 95vw;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .future h1 {
