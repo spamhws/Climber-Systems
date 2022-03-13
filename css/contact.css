@@ -1,0 +1,96 @@
+.about-main-pic {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  left: -0%;
+  z-index: -5;
+  /* transform: translateX(25%); */
+  height: auto;
+  /* background-image: linear-gradient(
+      45deg,
+      rgba(164, 164, 165, 0.15),
+      rgba(80, 180, 67, 0.15)
+    ),
+    url("../src/Pictures/ClimbersBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  margin-bottom: 60px;
+}
+
+#climbersBG {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  left: -0%;
+  top: 0%;
+  z-index: -100;
+}
+
+#climbersFG {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  left: -0%;
+  top: 0%;
+  z-index: 100;
+}
+
+.about-main-pic h1 {
+  position: absolute;
+  color: #fffaf1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.548);
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  left: 0;
+  right: 0;
+  letter-spacing: 0.1em;
+  top: 100%;
+  opacity: 0;
+  transform: translateY(-70%) scaleY(2);
+}
+
+.title.active {
+  animation: animate-title 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-title {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+iframe {
+  width: auto;
+
+  margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .about-main-pic h1 {
+    font-size: 2rem;
+    line-height: 100%;
+    transform: translateY(-100%) scaleY(2);
+    padding: 20px 30px;
+  }
+
+  #climbersBG {
+    object-position: -170px 0px;
+  }
+
+  #climbersFG {
+    object-position: -170px 0px;
+  }
+}
