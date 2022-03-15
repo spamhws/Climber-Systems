@@ -356,12 +356,16 @@ header .logo:hover {
   margin: 8px;
 }
 
-.contact-info img {
+.contact img {
   width: 50px;
   margin-top: 24px;
 }
 
-.contact-info a {
+.contact img:first-child {
+  margin-top: 0px;
+}
+
+.contact a {
   text-align: center;
 }
 

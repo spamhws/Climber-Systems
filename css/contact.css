@@ -1,20 +1,41 @@
+body {
+  background-color: #fffaf1;
+}
+
+.main-slogan {
+  font-size: 100px;
+}
+
+.contact {
+  margin-bottom: 32px;
+}
+
+.contact-info {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 24px;
+}
+
+.address {
+  width: 60%;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+
+  margin: auto;
+}
+
+/* Climbers image */
+
 .about-main-pic {
   overflow: hidden;
   width: 100%;
+  height: auto;
   position: relative;
   left: -0%;
-  z-index: -5;
-  /* transform: translateX(25%); */
-  height: auto;
-  /* background-image: linear-gradient(
-      45deg,
-      rgba(164, 164, 165, 0.15),
-      rgba(80, 180, 67, 0.15)
-    ),
-    url("../src/Pictures/ClimbersBG.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  /* transform: translateY(25%); */
   margin-bottom: 60px;
 }
 
@@ -37,7 +58,7 @@
   min-height: 500px;
   left: -0%;
   top: 0%;
-  z-index: 100;
+  z-index: 10;
 }
 
 .about-main-pic h1 {
@@ -47,13 +68,13 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 10rem;
   left: 0;
   right: 0;
   letter-spacing: 0.1em;
   top: 100%;
   opacity: 0;
-  transform: translateY(-70%) scaleY(2);
+  transform: translateY(-70%) scaleY(1);
 }
 
 .title.active {
@@ -72,13 +93,16 @@
   }
 }
 
-iframe {
-  width: auto;
-
-  margin: auto;
+.main-form {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 650px) {
+.contact-form {
+  width: 80%;
+}
+
+.contact-form @media only screen and (max-width: 650px) {
   .about-main-pic h1 {
     font-size: 2rem;
     line-height: 100%;
