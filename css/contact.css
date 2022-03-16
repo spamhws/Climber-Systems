@@ -2,8 +2,28 @@ body {
   background-color: #fffaf1;
 }
 
+.content > * {
+  margin-bottom: 60px;
+}
+
 .main-slogan {
-  font-size: 100px;
+  font-size: 5em;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: animate-slogan 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-slogan {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-0px);
+    opacity: 1;
+  }
 }
 
 .contact {
@@ -68,13 +88,14 @@ iframe {
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10rem;
+  font-size: 8em;
+  max-width: 70%;
   left: 0;
   right: 0;
   letter-spacing: 0.1em;
   top: 100%;
   opacity: 0;
-  transform: translateY(-70%) scaleY(1);
+  transform: translateY(-80%) scaleY(1);
 }
 
 .title.active {
@@ -95,19 +116,39 @@ iframe {
 
 .main-form {
   margin-bottom: 60px;
-  text-align: center;
+}
+
+.main-form h3 {
+  font-size: 32px;
 }
 
 .contact-form {
-  width: 80%;
+  width: clamp(250px, 70%, 95%);
 }
 
-.contact-form @media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
+  .main-slogan {
+    margin: 32px auto;
+    font-size: 3em;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+
+  .address {
+    width: 95%;
+  }
+
   .about-main-pic h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 100%;
-    transform: translateY(-100%) scaleY(2);
+    transform: translateY(-130%) scaleY(1);
     padding: 20px 30px;
+  }
+
+  .content > * {
+    margin-bottom: 30px;
   }
 
   #climbersBG {
@@ -115,6 +156,10 @@ iframe {
   }
 
   #climbersFG {
-    object-position: -170px 0px;
+    object-position: -220px 0px;
+  }
+
+  .contact-form {
+    width: 95%;
   }
 }

@@ -5,6 +5,10 @@
   font-family: "Montserrat", Geneva, Tahoma, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -380,7 +384,7 @@ header .logo:hover {
 .email-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
+  gap: 1.6%;
 }
 
 .contact-form h3 {
@@ -390,7 +394,7 @@ header .logo:hover {
 #form-name,
 #form-email {
   background-color: #fffaf1;
-  width: 44%;
+  width: 48%;
   height: 32px;
   font-size: 16px;
   font-family: "Merriweather", serif;
@@ -409,7 +413,7 @@ header .logo:hover {
 
 #form-message {
   background-color: #fffaf1;
-  width: 92%;
+  width: 99%;
   height: 160px;
   padding: 4px;
   text-align: left;

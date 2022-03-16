@@ -28,7 +28,7 @@
 
         <ul id="nav-lists">
           <li><a href="html/about.html">About Us</a></li>
-          <li><a href="#">Companies</a></li>
+          <li><a href="#scroll-companies">Companies</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="html/contact.html">Contact</a></li>
         </ul>
@@ -37,7 +37,11 @@
           <ul id="nav-lists-mobile" class="nav-lists-mobile">
             <li class="close"><span onclick="Hide()">×</span></li>
             <li><a href="html/about.html" class="bolder">About Us</a></li>
-            <li><a href="#" class="bolder">Companies</a></li>
+            <li>
+              <a href="#scroll-companies" onclick="Hide()" class="bolder"
+                >Companies</a
+              >
+            </li>
             <li><a href="#">Climber engineers</a></li>
             <li><a href="#">Climber systems</a></li>
             <li><a href="#">Climber Enviro solutions</a></li>
@@ -116,9 +120,8 @@
         </p>
       </article>
 
-      <hr />
-
-      <section class="companies-products centered">
+      <hr id="scroll-companies"/ >
+      <scroll-page class="companies-products centered">
         <h2>Companies and Products:</h2>
         <div class="cards-flex">
           <article class="card" id="engineers-card">
@@ -173,7 +176,7 @@
             />
           </article>
         </div>
-      </section>
+      </scroll-page>
 
       <hr />
 
@@ -240,7 +243,6 @@
               />
               <input type="hidden" name="_captcha" value="false" />
               <!-- <p>Message:</p> -->
-              <br />
               <label>Message:</label>
               <textarea
                 id="form-message"
