@@ -11,7 +11,7 @@ body {
   text-align: center;
   opacity: 0;
   transform: translateY(25px);
-  animation: animate-slogan 1s ease-in-out 1s;
+  animation: animate-slogan 1s ease-in-out 0s;
   animation-fill-mode: forwards;
 }
 
@@ -144,7 +144,7 @@ iframe {
     font-size: 4rem;
     line-height: 100%;
     transform: translateY(-130%) scaleY(1);
-    padding: 20px 30px;
+    padding: 20px 0px;
   }
 
   .content > * {

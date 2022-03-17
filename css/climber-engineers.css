@@ -1,0 +1,23 @@
+.content > * {
+  margin-bottom: 60px;
+}
+
+.logo-main {
+  width: 95%;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: animate-logo 1s ease-in-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-logo {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-0px);
+    opacity: 1;
+  }
+}
