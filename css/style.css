@@ -152,7 +152,7 @@ header .logo:hover {
 
 .carousel {
   width: 90vw;
-  height: clamp(300px, calc(100vh - 300px), calc(100vh - 80px));
+  height: clamp(300px, 400px, 90vh);
   position: relative;
   border: 2px ridge #cfcfcf;
   border-radius: 20px;
