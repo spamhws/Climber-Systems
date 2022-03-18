@@ -10,6 +10,9 @@ html {
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-flow: column nowrap;
   margin: 0;
   padding: 0;
   background-color: #fffaf1;
@@ -313,7 +316,7 @@ header .logo:hover {
   transform: scale(1.05);
   box-shadow: 6px 12px 16px -12px darkgray;
   z-index: 2;
-  background-color: fffaf1;
+  background-color: #f3ede3;
 }
 
 .card img {
@@ -427,7 +430,7 @@ header .logo:hover {
   border: none;
 }
 
-.email-form button {
+.btn {
   margin-top: 16px;
   font-size: 16px;
   font-weight: bold;
@@ -442,12 +445,24 @@ header .logo:hover {
   border: none;
 }
 
+.btn:hover {
+  background-color: #cc7913;
+}
+
+.btn:active {
+  background-color: #cc7913;
+  box-shadow: -1px 1px 2px #656081;
+  transform: translate(-2px, 2px);
+}
+
 /* Footer styling below */
 
 footer {
   background-color: #7db885;
   color: #1a1a1a;
   height: auto;
+  width: 100%;
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,6 +480,7 @@ footer {
 
 footer h1 {
   font-size: 60px;
+  font-style: italic;
 }
 
 footer ul {
