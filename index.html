@@ -59,17 +59,6 @@
         <div class="carousel" data-carousel>
           <ul data-slides>
             <li class="slide" data-active>
-              <img src="src\Pictures\slide-pic-1.jpg" alt="Agriculture Pic 1" />
-              <p class="quote">
-                Voyage of discovery is about <br />having a new vision
-              </p>
-              <div class="slide-dots">
-                <div class="dot current"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </li>
-            <li class="slide">
               <img
                 id="image2"
                 src="src\Pictures\slide-pic-2.jpg"
@@ -80,11 +69,23 @@
                 solutions
               </p>
               <div class="slide-dots">
+                <div class="dot current"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </li>
+            <li class="slide">
+              <img src="src\Pictures\slide-pic-4.jpg" alt="Agriculture Pic 1" />
+              <p class="quote">
+                Voyage of discovery is about <br />having a new vision
+              </p>
+              <div class="slide-dots">
                 <div class="dot"></div>
                 <div class="dot current"></div>
                 <div class="dot"></div>
               </div>
             </li>
+
             <li class="slide">
               <img src="src\Pictures\slide-pic-3.jpg" alt="Agriculture Pic 3" />
               <p class="quote">
@@ -147,13 +148,10 @@
 
       <hr id="scroll-companies"/ >
       <section class="companies-products centered">
-        <h2>Our Companies:</h2>
+        <h2>Our Companies</h2>
         <div class="cards-flex">
           <a href="html\climber-engineers.html" class="card" id="systems-card">
-            <img
-              src="https://www.climateaction.org/images/made/images/uploads/articles/aukgov2_1000_652.PNG"
-              alt="systems-img"
-            />
+            <img src="src\Pictures\slide-pic-1.jpg" alt="systems-img" />
             <h4>Climber Systems</h4>
             <p>
               Climber systems has been actively working into design and
@@ -174,7 +172,11 @@
             class="card"
             id="engineers-card"
           >
-            <img src="src\Pictures\windmil.jpg" alt="engineers-img" />
+            <img
+              src="src\Pictures\windmil.jpg"
+              alt="engineers-img"
+              style="object-position: center -40px"
+            />
             <h4>Climber Engineers</h4>
             <p>
               Based on the principles and background of industrial automation,
@@ -189,7 +191,7 @@
           </a>
 
           <a href="html\climber-engineers.html" class="card" id="enviro-card">
-            <img src="src\Pictures\leaves.jpg" alt="enviro-img" />
+            <img src="src\Pictures\Eco.jpg" alt="enviro-img" />
             <h4>Climber enviro-solutions</h4>
             <p>
               Enviro-solution believes its aim in the field of sanitation and
@@ -238,7 +240,7 @@
           </div>
 
           <div class="contact-form">
-            <h4>Send us a message:</h4>
+            <h4>Send us a message</h4>
 
             <form
               class="email-form"
@@ -250,7 +252,7 @@
                 id="form-name"
                 type="text"
                 name="name"
-                placeholder="Your Name:"
+                placeholder="Your Name"
                 required
               />
               <!-- <p>Email:</p> -->
@@ -258,7 +260,7 @@
                 type="email"
                 name="email"
                 id="form-email"
-                placeholder="Your email address: "
+                placeholder="Your email address"
                 required
               />
               <input type="hidden" name="_subject" value="New submission!" />
@@ -284,11 +286,14 @@
         </div>
       </section>
     </div>
+
     <footer>
       <div class="footer-limiter">
         <p>Copyright &copy; 2022 | <a href="index.html">Climber Systems</a></p>
-        <a href="https://www.facebook.com/Climber-Systems-114003380376791/"
-          ><img src="src\Icons\FacebookLogo.svg" alt="Facebook-logo"
+        <a
+          href="https://www.facebook.com/Climber-Systems-114003380376791/"
+          target="_blank"
+          ><img src="..\src\Icons\FacebookLogo.svg" alt="Facebook-logo"
         /></a>
       </div>
     </footer>

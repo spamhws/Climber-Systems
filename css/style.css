@@ -32,13 +32,13 @@ body {
 
 h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 60px;
 }
 
 h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 48px;
 }
 
@@ -277,13 +277,14 @@ header .logo:hover {
 
 .quote {
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
   position: absolute;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  max-width: 40%;
+  letter-spacing: 0.02em;
+  max-width: 50%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -533,7 +534,7 @@ hr {
 }
 
 #form-message {
-  height: 370px;
+  min-height: 370px;
   resize: vertical;
 }
 
@@ -627,7 +628,7 @@ footer img {
     flex-wrap: nowrap;
     position: fixed;
     left: 0;
-    top: -10%;
+    top: -15%;
     flex-direction: row;
     background: rgba(255, 255, 255, 0.99);
     width: 100%;
