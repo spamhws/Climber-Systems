@@ -2,10 +2,6 @@ body {
   background-color: #fffaf1;
 }
 
-.content > * {
-  margin-bottom: 60px;
-}
-
 .main-slogan {
   font-size: 5em;
   text-align: center;

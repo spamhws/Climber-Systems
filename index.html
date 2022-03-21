@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climber Systems</title>
     <script src="js/script.js" defer></script>
+    <link rel="icon" type="image/png" href="src/Logos/Favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -28,30 +29,26 @@
 
         <ul id="nav-lists">
           <li><a href="html/about.html">About Us</a></li>
-          <li><a href="#scroll-companies">Companies</a></li>
           <li><a href="#">Products</a></li>
-          <li><a href="html/contact.html">Contact</a></li>
+          <li>
+            <button class="btn">
+              <a href="#contact-scroll">Contact us</a>
+            </button>
+          </li>
         </ul>
 
         <div class="mobile-menu">
           <ul id="nav-lists-mobile" class="nav-lists-mobile">
-            <li class="close"><span onclick="Hide()">×</span></li>
-            <li><a href="html/about.html" class="bolder">About Us</a></li>
-            <li>
-              <a href="#scroll-companies" onclick="Hide()" class="bolder"
-                >Companies</a
-              >
+            <li class="close" onclick="Hide()">
+              <img src="src\Icons\cross-close.svg" alt="Cross-close-img" />
             </li>
-            <li><a href="#">Climber engineers</a></li>
-            <li><a href="#">Climber systems</a></li>
-            <li><a href="#">Climber Enviro solutions</a></li>
-            <li><a href="#" class="bolder">Products</a></li>
-            <li><a href="#">Agricultural (Post harvesting)</a></li>
-            <li><a href="#">Sanitation </a></li>
-            <li><a href="#">Organic/ Inorganic waste management</a></li>
-            <li><a href="#">Industrial Enclosures</a></li>
-            <li><a href="#">Special Purpose machines</a></li>
-            <li><a href="html/contact.html" class="bolder">Contact</a></li>
+            <li><a href="html/about.html">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li>
+              <button class="btn">
+                <a href="#contact-scroll">Contact us</a>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
@@ -60,73 +57,104 @@
     <div class="content">
       <section aria-label="Newest Photos" class="gallery centered">
         <div class="carousel" data-carousel>
-          <button class="carousel-button prev" data-carousel-button="prev">
-            &#8656;
-          </button>
-          <button class="carousel-button next" data-carousel-button="next">
-            &#8658;
-          </button>
           <ul data-slides>
             <li class="slide" data-active>
-              <img
-                src="https://images.unsplash.com/photo-1533241242276-46a506b40d66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80"
-                alt="Agriculture Pic 1"
-              />
+              <img src="src\Pictures\slide-pic-1.jpg" alt="Agriculture Pic 1" />
               <p class="quote">
-                - "Voyage of discovery is about having a new vision"
+                Voyage of discovery is about <br />having a new vision
               </p>
+              <div class="slide-dots">
+                <div class="dot current"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
             </li>
             <li class="slide">
               <img
-                src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1482&q=80"
+                id="image2"
+                src="src\Pictures\slide-pic-2.jpg"
                 alt="Agriculture Pic 2"
               />
               <p class="quote">
-                - "Engineering is about using science to find practical
-                solutions"
+                Engineering is about using <br />science to find practical
+                solutions
               </p>
+              <div class="slide-dots">
+                <div class="dot"></div>
+                <div class="dot current"></div>
+                <div class="dot"></div>
+              </div>
             </li>
             <li class="slide">
-              <img
-                src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1391&q=80"
-                alt="Agriculture Pic 3"
-              />
+              <img src="src\Pictures\slide-pic-3.jpg" alt="Agriculture Pic 3" />
               <p class="quote">
-                - "Those who initiate an idea will have a better opportunity"
+                Those who initiate an idea <br />will have a better opportunity
               </p>
+              <div class="slide-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot current"></div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <article class="about centered">
-        <h2>WHAT WE STAND FOR:</h2>
-        <p>
-          Climber Engineers, Climber Enviro Solutions and Climber Systems is an
-          umbrella organization built on the foundation of innovation. We are
-          driven by a purpose that is 25 years young and it lies at the center
-          of all our thoughts and plans that drive our actions. We look at
-          actions and solutions that are sustainable and lead to ‘Caring for
-          Life’. We aim to tap a large reservoir of entrepreneurial energy in
-          India by investing in breakthrough ideas and embracing
-          entrepreneurship. We plan to build an economic model of growth so
-          India will be able to unleash the power of innovation to ensure a
-          better life for the Rural Indian community. India is where our roots
-          are and we want to make a difference to the lives of Rural Indian
-          community with innovation and create new paradigms in machine design
-          and manufacture. We are strong advocates of ‘Make in India’ and
-          ‘Innovate in India’ to committed to fulfill the promise of
-          ‘Atmanirbhar Bharat’.
-        </p>
+        <h2>What we stand for</h2>
+        <div class="cards-flex">
+          <div class="card">
+            <img
+              src="src\Icons\structure-business-svgrepo-com.svg"
+              alt="structure-img"
+            />
+            <h4>Structure of innovation</h4>
+            <p>
+              Climber Engineers, Climber Enviro Solutions and Climber Systems is
+              an umbrella organization built on the foundation of innovation. We
+              are driven by a purpose that is 25 years young and it lies at the
+              center of all our thoughts and plans that drive our actions.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="src\Icons\bulb.svg" alt="LightBulb-img" />
+            <h4>Ideas above all</h4>
+            <p>
+              We look at actions and solutions that are sustainable and lead to
+              ‘Caring for Life’. We plan to build an economic model of growth so
+              India will be able to unleash the power of innovation to ensure a
+              better life for the Rural Indian community.
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="src\Icons\ajitakshaya_Ashok_Chakra.svg"
+              alt="Ashok-Chakra-img"
+              style="object-position: center 30%"
+            />
+            <h4>Atmanirbhar Bharat</h4>
+            <p>
+              We aim to tap a large reservoir of entrepreneurial energy in India
+              by investing in breakthrough ideas and embracing entrepreneurship.
+              We are strong advocates of ‘Make in India’ and ‘Innovate in India’
+              to committed to fulfill the promise of ‘Atmanirbhar Bharat’.
+            </p>
+          </div>
+        </div>
       </article>
 
       <hr id="scroll-companies"/ >
-      <scroll-page class="companies-products centered">
-        <h2>Companies and Products:</h2>
+      <section class="companies-products centered">
+        <h2>Our Companies:</h2>
         <div class="cards-flex">
           <a href="html\climber-engineers.html" class="card" id="systems-card">
-            
-            <h3>Climber Systems</h3>
+            <img
+              src="https://www.climateaction.org/images/made/images/uploads/articles/aukgov2_1000_652.PNG"
+              alt="systems-img"
+            />
+            <h4>Climber Systems</h4>
             <p>
               Climber systems has been actively working into design and
               development of machinery for agricultural field, to increase
@@ -136,31 +164,33 @@
               been associated with institutes such as MCCIA; Vigyan Ashram,
               India.
             </p>
-            <img
-              src="https://www.climateaction.org/images/made/images/uploads/articles/aukgov2_1000_652.PNG"
-              alt="systems-img"
-              width="300px"
-            />
+            <button href="html\climber-engineers.html" class="btn">
+              Learn more
+            </button>
           </a>
 
-          <a href="html\climber-engineers.html" class="card" id="engineers-card">
-              <h3>Climber Engineers</h3>
-              <p>
-                Based on the principles and background of industrial automation,
-                climber engineers aim towards development of technologies, R&D,
-                in various fields of profession including industrial automation,
-                special purpose machines, acoustic treatment of plants and
-                safety enclosures.
-              </p>
-              <img
-                src="https://media.istockphoto.com/photos/asian-engineer-using-a-laptop-in-a-factory-picture-id1180170400?k=20&m=1180170400&s=612x612&w=0&h=CV8A2uyffbhx0sFXCXY3t4aV7vbNIK-N9XinMGri2XQ="
-                alt="engineers-img"
-                width="300px"
-            /></a>
-            </a>
+          <a
+            href="html\climber-engineers.html"
+            class="card"
+            id="engineers-card"
+          >
+            <img src="src\Pictures\windmil.jpg" alt="engineers-img" />
+            <h4>Climber Engineers</h4>
+            <p>
+              Based on the principles and background of industrial automation,
+              climber engineers aim towards development of technologies, R&D, in
+              various fields of profession including industrial automation,
+              special purpose machines, acoustic treatment of plants and safety
+              enclosures.
+            </p>
+            <button href="html\climber-engineers.html" class="btn">
+              Learn more
+            </button>
+          </a>
 
           <a href="html\climber-engineers.html" class="card" id="enviro-card">
-            <h3>Climber enviro-solutions</h3>
+            <img src="src\Pictures\leaves.jpg" alt="enviro-img" />
+            <h4>Climber enviro-solutions</h4>
             <p>
               Enviro-solution believes its aim in the field of sanitation and
               waste management, considering both organic and inorganic waste.
@@ -170,48 +200,45 @@
               foundation, Pune University, India and many more institutions
               leading in the field
             </p>
-            <img
-              src="https://bsmedia.business-standard.com/_media/bs/img/article/2021-06/05/full/1622854752-8871.jpg"
-              alt="enviro-img"
-              width="300px"
-            />
+            <button href="html\climber-engineers.html" class="btn">
+              Learn more
+            </button>
           </a>
         </div>
-      </scroll-page>
+      </section>
 
-      <hr />
+      <hr id="contact-scroll" />
 
       <section class="contact">
-        <h2>Contact:</h2>
+        <h2>Contact us</h2>
         <div class="contact-flex">
           <div class="contact-info">
-            <img src="src\Icons\tabler-icon-phone.svg" alt="phone icon" />
             <a href="tel:+91-932-567-9953">
-              <p>India: <b>+91-932-567-9953</b></p>
+              <img src="src\Icons\tabler-icon-phone.svg" alt="phone icon" />
+              <p>India: +91-932-567-9953</p>
             </a>
             <a href="tel:+48-729-471-143">
-              <p>International: <b>+48-729-471-143</b></p>
+              <img src="src\Icons\tabler-icon-phone.svg" alt="phone icon" />
+              <p>International: +48-729-471-143</p>
             </a>
-            <img src="src\Icons\tabler-icon-at.svg" alt="email icon" />
+
             <a href="mailto:climbersystems@gmail.com">
-              <p>Email: <b>climbersystems@gmail.com</b></p>
+              <img src="src\Icons\tabler-icon-at.svg" alt="email icon" />
+              <p>climbersystems@gmail.com</p>
             </a>
-            <img src="src\Icons\tabler-icon-map-pin.svg" alt="" />
-            <a href="https://goo.gl/maps/aM99HHVXm1a71x3J8">
-              <p>
-                Address:
-                <b
-                  >S No-50/2/9, Gujarwadi Road, Katraj, Katraj, Pune,
-                  Maharashtra 411046, India</b
-                >
-              </p>
-            </a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d795.6958464182782!2d73.8616867466059!3d18.438824561438665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eadf775df6a3%3A0x1e50a78a1520d7db!2sShop%20No.%2050%2C%202A%2C%20Gujarwadi%20Rd%2C%20Katrajnagar%2C%20Katraj%2C%20Pune%2C%20Maharashtra%20411046%2C%20India!5e0!3m2!1sen!2spl!4v1647195402700!5m2!1sen!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
           </div>
 
-          <hr width="1" size="360" />
-
           <div class="contact-form">
-            <h3>Send us a message:</h3>
+            <h4>Send us a message:</h4>
 
             <form
               class="email-form"
@@ -226,7 +253,6 @@
                 placeholder="Your Name:"
                 required
               />
-              <br />
               <!-- <p>Email:</p> -->
               <input
                 type="email"
@@ -244,7 +270,6 @@
               />
               <input type="hidden" name="_captcha" value="false" />
               <!-- <p>Message:</p> -->
-              <label>Message:</label>
               <textarea
                 id="form-message"
                 type="text"
@@ -259,23 +284,13 @@
         </div>
       </section>
     </div>
-    <footer class="centered">
-      <div class="footer-connect">
-        <h1>Let's connect!</h1>
-        <ul class="footer-links">
-          <li><a href="html/about.html">About Us</a></li>
-          <li>
-            <a
-              href="https://www.facebook.com/Climber-Systems-114003380376791/"
-              target="_blank:"
-              >Our Facebook Page
-            </a>
-          </li>
-          <li><a href="html/contact.html">Contact</a></li>
-        </ul>
+    <footer>
+      <div class="footer-limiter">
+        <p>Copyright &copy; 2022 | <a href="index.html">Climber Systems</a></p>
+        <a href="https://www.facebook.com/Climber-Systems-114003380376791/"
+          ><img src="src\Icons\FacebookLogo.svg" alt="Facebook-logo"
+        /></a>
       </div>
-
-      <p>Copyright &copy; 2022 | <a href="index.html">Climber Systems</a></p>
     </footer>
   </body>
 </html>
