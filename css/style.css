@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  /* display: flex; */
+  display: flex;
   min-height: 100vh;
-  /* flex-flow: column nowrap; */
+  flex-flow: column nowrap;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -117,7 +117,7 @@ header .logo {
   max-width: 300px;
   margin: 16px 0px;
   overflow: hidden;
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
 
 header .logo a {
@@ -129,8 +129,7 @@ header .logo a {
 header .logo a img {
   width: auto;
   height: 48px;
-  transform: translateY(-0px);
-  image-rendering: crisp-edges;
+  backface-visibility: hidden;
 }
 
 header .logo:hover {
