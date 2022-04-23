@@ -87,6 +87,10 @@ li {
   margin: 24px auto;
 }
 
+.download-flex .card:hover {
+  background-color: #f2f2f2;
+}
+
 .download-flex .card h4 {
   text-align: left;
   margin: 12px;
