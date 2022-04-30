@@ -103,7 +103,7 @@ a {
   justify-content: space-between;
   /* flex-wrap: wrap; */
   position: fixed;
-  top: 0;
+  /* top: 0; */
   align-items: center;
   overflow: hidden;
 
