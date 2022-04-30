@@ -31,6 +31,8 @@
 .about-main-pic h1 {
   position: relative;
   color: azure;
+  text-shadow: -1px -1px 0 #999, 1px 0px 0 #999, -1px 1px 0 #999, 1px 1px 0 #999;
+
   margin: auto;
   text-align: center;
   text-transform: uppercase;
@@ -331,6 +333,10 @@
   margin-top: 32px;
 }
 
+.about {
+  margin-bottom: 32px;
+}
+
 /* mobile styling below */
 
 @media only screen and (max-width: 650px) {
@@ -393,5 +399,10 @@
     max-width: 30%;
     width: 64px;
     height: auto;
+  }
+
+  .content .btn {
+    width: 320px;
+    margin: 0 auto;
   }
 }
