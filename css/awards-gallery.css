@@ -1,0 +1,52 @@
+.flex-grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.card {
+  max-height: 320px;
+  max-width: 320px;
+}
+
+.card img {
+  width: auto;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h4 {
+  justify-self: flex-end;
+}
+
+.card:hover {
+  background-color: #f2f2f2;
+}
+
+#template {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#template > .card {
+  margin: 120px auto;
+  max-width: 80vh;
+  max-height: 80vh;
+}
+
+#template > .card:hover {
+  background-color: white;
+}
+
+#template > .card img {
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+}
