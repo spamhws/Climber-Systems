@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card")
+const cards = document.querySelectorAll(".grab")
 let overlay = document.querySelector("#template")
 
 function cardAnimation(e) {
@@ -6,16 +6,21 @@ function cardAnimation(e) {
 
   overlay.appendChild(selectedCard)
   overlay.style.display = "flex"
+  overlay.classList.add("reveal")
 
-  selectedCard.addEventListener("blur", (event) => closeOverlay(event))
+  overlay.addEventListener("click", (event) => closeOverlay(event), {
+    once: true,
+  })
   function closeOverlay(event) {
-    console.log(event)
-    let isClickInsideElement = selectedCard.contains(event.target)
+    const isClickInsideElement = selectedCard.contains(event.target)
 
     if (!isClickInsideElement) {
-      console.log(event == e)
-      overlay.removeChild(selectedCard)
+      overlay.innerHTML = ""
       overlay.style.display = "none"
+    } else {
+      overlay.addEventListener("click", (event) => closeOverlay(event), {
+        once: true,
+      })
     }
   }
 }

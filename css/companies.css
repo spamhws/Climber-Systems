@@ -60,10 +60,23 @@
   margin-top: 60px;
 }
 
+.company ol {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .company > img {
   width: 80%;
   margin: 0 auto 32px;
   opacity: 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
 }
 
 .download-flex {

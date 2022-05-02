@@ -6,27 +6,46 @@
 }
 
 .card {
-  max-height: 320px;
-  max-width: 320px;
+  height: 320px;
+  width: 320px;
+  max-height: 95vh;
+  max-width: 95vw;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
 }
 
 .card img {
-  width: auto;
   height: 220px;
+  width: 288px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
+.flex-grid a > img {
+  max-width: 200px;
+  height: auto;
+  margin: 0px auto 40px;
+  transform: translateY(-20px);
+}
+
 .card h4 {
-  justify-self: flex-end;
+  /* justify-self: flex-end; */
+  position: absolute;
+  bottom: 0;
+  left: 16px;
 }
 
 .card:hover {
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 #template {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100vw;
@@ -36,17 +55,57 @@
 }
 
 #template > .card {
-  margin: 120px auto;
-  max-width: 80vh;
+  margin: 120px auto auto;
+
+  height: auto;
+  padding-bottom: 60px;
+  width: auto;
+  max-width: 90vw;
   max-height: 80vh;
+  top: calc(50% - 120px);
+  transform: translateY(-50%);
+}
+
+.reveal > .card {
+  animation: fullscreenPic 0.3s ease-in-out forwards;
+}
+
+@keyframes fullscreenPic {
+  from {
+    transform: translateY(-50%) scale(0.01);
+  }
+  to {
+    transform: translateY(-50%) scale(1);
+  }
 }
 
 #template > .card:hover {
   background-color: white;
+  cursor: initial;
 }
 
 #template > .card img {
-  height: 90%;
+  height: auto;
+  max-height: calc(80vh - 16px - 60px);
   width: auto;
   object-fit: contain;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 650px) {
+  .content {
+    padding: 8px;
+    padding-top: 80px;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .flex-grid a > img {
+    max-width: 200px;
+    height: auto;
+    margin: auto auto 40px;
+    transform: translateY(0px);
+  }
 }

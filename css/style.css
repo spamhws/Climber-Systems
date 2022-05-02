@@ -351,6 +351,7 @@ header .logo:hover {
 .card {
   width: 320px;
   height: auto;
+  max-width: 95vw;
   position: relative;
   display: flex;
   flex-direction: column;

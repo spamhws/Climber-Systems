@@ -153,6 +153,7 @@
 
 .partners-card {
   width: 320px;
+  max-width: 95vw;
   height: auto;
   position: relative;
   display: flex;
@@ -340,6 +341,14 @@
 /* mobile styling below */
 
 @media only screen and (max-width: 650px) {
+  .future {
+    max-width: 95vw;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
   .about-main-pic h1 {
     font-size: 4rem;
   }
@@ -404,5 +413,7 @@
   .content .btn {
     width: 320px;
     margin: 0 auto;
+
+    max-width: 95vw;
   }
 }
