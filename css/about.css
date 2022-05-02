@@ -164,6 +164,7 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 16px;
   padding: 32px;
+  transition: transform 0.2s;
 }
 
 .partners-card img {
@@ -174,6 +175,13 @@
 
 .partners-card h4 {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.partners-card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  background-color: #f7f7f7;
 }
 
 .logo-section {
