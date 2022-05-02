@@ -27,8 +27,7 @@
 .flex-grid a > img {
   max-width: 200px;
   height: auto;
-  margin: 0px auto 40px;
-  transform: translateY(-20px);
+  margin: 20px auto 40px;
 }
 
 .card h4 {
@@ -67,7 +66,7 @@
 }
 
 .reveal > .card {
-  animation: fullscreenPic 0.3s ease-in-out forwards;
+  animation: fullscreenPic 0.2s ease-out forwards;
 }
 
 @keyframes fullscreenPic {
@@ -87,6 +86,7 @@
 #template > .card img {
   height: auto;
   max-height: calc(80vh - 16px - 60px);
+  padding-bottom: 8px;
   width: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -100,12 +100,5 @@
 
   .content h1 {
     text-align: center;
-  }
-
-  .flex-grid a > img {
-    max-width: 200px;
-    height: auto;
-    margin: auto auto 40px;
-    transform: translateY(0px);
   }
 }

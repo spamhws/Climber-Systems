@@ -9,13 +9,14 @@ function Hide() {
   navList.classList.remove("_Menus-show")
 }
 
-// Image gallery buttons:
+// Image gallery Loop:
+const slides = document.querySelector("[data-slides]")
+let direction = 1
 
 const slideLoop = () => {
-  const slides = document.querySelector("[data-slides]")
   if (slides != null) {
     const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + 1
+    let newIndex = [...slides.children].indexOf(activeSlide) + direction
     if (newIndex < 0) newIndex = slides.children.length - 1
     if (newIndex >= slides.children.length) newIndex = 0
 
@@ -24,7 +25,38 @@ const slideLoop = () => {
   }
 }
 
-setInterval(slideLoop, [5000])
+myInterval = setInterval(slideLoop, [3000])
+
+// Touch scroll for gallery:
+let touchstartX = 0
+let touchendX = 0
+
+function handleGesture() {
+  if (touchendX < touchstartX) {
+    direction = 1
+  }
+
+  if (touchendX > touchstartX) {
+    direction = -1
+  }
+  setTimeout(slideLoop, 1)
+
+  clearInterval(myInterval)
+
+  setTimeout(() => {
+    direction = 1
+  }, 3000)
+  myInterval = setInterval(slideLoop, [5000])
+}
+
+slides.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+slides.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX
+  handleGesture()
+})
 
 function reveal() {
   let reveals = document.querySelectorAll(".animated")

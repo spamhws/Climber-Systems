@@ -1,5 +1,14 @@
+const json = {
+  part1: "Message example: &#10;&#10;Hello, &#10;&#10;",
+  template: {
+    "Rice de-husking machine":
+      "I'd like to request more information about your Rice de-husking machine.",
+  },
+  part2:
+    "&#10;&#10;My phone number: &#10;My preferred method of contact is phone/email.&#10;&#10;Looking forward to hearing from you!",
+}
+
 let lastViewedProduct = localStorage.getItem("lastViewedProduct")
-console.log(lastViewedProduct)
 
 let textArea = document.querySelector("#form-message")
 
@@ -12,6 +21,8 @@ function templateConstructor(json) {
   textArea.innerHTML = message
 }
 
-fetch("../../js/template.json")
-  .then((response) => response.json())
-  .then((json) => templateConstructor(json))
+templateConstructor(json)
+
+// fetch("../../js/template.json")
+//   .then((response) => response.json())
+//   .then((json) => templateConstructor(json))
