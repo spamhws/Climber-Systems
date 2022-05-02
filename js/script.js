@@ -1,12 +1,27 @@
 // Mobile Navigation buttons:
 
 const navList = document.getElementById("nav-lists-mobile")
+const mobileBG = document.querySelector(".mobile-menu-bg")
+
 function Show() {
+  mobileBG.style.display = "block"
+  mobileBG.classList.add("show-bg")
   navList.classList.add("_Menus-show")
+
+  mobileBG.addEventListener("click", () => {
+    Hide()
+  })
 }
 
 function Hide() {
+  mobileBG.removeEventListener("click", () => {
+    Hide()
+  })
   navList.classList.remove("_Menus-show")
+  mobileBG.classList.remove("show-bg")
+  setTimeout(() => {
+    mobileBG.style.display = "none"
+  }, 200)
 }
 
 // Image gallery Loop:
@@ -49,14 +64,16 @@ function handleGesture() {
   myInterval = setInterval(slideLoop, [5000])
 }
 
-slides.addEventListener("touchstart", (e) => {
-  touchstartX = e.changedTouches[0].screenX
-})
+if (slides != null) {
+  slides.addEventListener("touchstart", (e) => {
+    touchstartX = e.changedTouches[0].screenX
+  })
 
-slides.addEventListener("touchend", (e) => {
-  touchendX = e.changedTouches[0].screenX
-  handleGesture()
-})
+  slides.addEventListener("touchend", (e) => {
+    touchendX = e.changedTouches[0].screenX
+    handleGesture()
+  })
+}
 
 function reveal() {
   let reveals = document.querySelectorAll(".animated")

@@ -183,6 +183,10 @@
   justify-content: space-around;
 }
 
+.logo-section p {
+  line-height: 32px;
+}
+
 .logo-section h1 {
   font-size: 40px;
   align-self: stretch;
@@ -326,6 +330,7 @@
 
 .future p {
   margin-top: 32px;
+  line-height: 24px;
 }
 
 .future .btn {

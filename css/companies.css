@@ -85,7 +85,7 @@ a.anchor {
   overflow-x: scroll;
   flex-wrap: nowrap;
   gap: 32px;
-  padding: 0px 16px 16px;
+  padding: 4px 4px 16px;
 }
 
 .company > img.animated.active {
