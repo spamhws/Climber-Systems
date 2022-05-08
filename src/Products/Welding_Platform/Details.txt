@@ -1,0 +1,14 @@
+General Specification
+--portable platform on wheels 
+--Sturdy 
+--180 degree rotational freedom
+--Easier mounting possibilities for jigs and fixtures with replacable slotted plates 
+--Multi angular position locking possibility for position control during welding and desk based operations
+--Gear assisted turing wheel for easier control 
+
+Technical Specifications
+1. Dimensions (Including frame, upright)
+Length =  3100 mm 
+Width = 1650 mm 
+Height = 1700 mm 
+Build material: Mild Steel, galvanised 

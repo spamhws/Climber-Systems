@@ -25,9 +25,11 @@
 }
 
 .flex-grid a > img {
-  max-width: 200px;
+  max-width: 90px;
   height: auto;
-  margin: 20px auto 40px;
+  color: #444444;
+  filter: invert(24%) sepia(18%) saturate(0%) hue-rotate(242deg) brightness(85%) contrast(81%);
+  margin: 80px auto 40px;
 }
 
 .card h4 {
@@ -35,6 +37,8 @@
   position: absolute;
   bottom: 16px;
   left: 16px;
+  max-width: 280px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -60,10 +64,16 @@
   height: auto;
   padding-bottom: 60px;
   width: auto;
+  min-width: 300px;
   max-width: 90vw;
   max-height: 80vh;
   top: calc(50% - 120px);
   transform: translateY(-50%);
+}
+
+#template > .card h4 {
+  max-width: 95%;
+  bottom: 16px !important;
 }
 
 .reveal > .card {
@@ -83,12 +93,16 @@
   background-color: white;
   cursor: initial;
 }
+.double h4 {
+  bottom: 8px;
+}
 
 #template > .card img {
   height: auto;
   max-height: calc(80vh - 16px - 60px);
   /* padding-bottom: 0px; */
   width: auto;
+  margin: auto;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -101,5 +115,9 @@
 
   .content h1 {
     text-align: center;
+  }
+
+  #template > .double img {
+    margin-bottom: 8px;
   }
 }

@@ -7,6 +7,7 @@
     <title>Climber Systems</title>
     <link rel="icon" type="image/png" href="../src/Logos/Favicon.png" />
     <script src="../js/script.js" defer></script>
+    <script src="../js/slide-loop.js" defer></script>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/product-template.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,54 +55,66 @@
       <div class="desktop-prod">
         <div class="product-flex">
           <div class="first-col">
-            <h1>Rice De-husking Machine</h1>
-            <div class="card">
-              <img id="main-pic" src="..\src\Products\Rice\Rice_2.jpg" alt="Rice-Dehuscing-Machine-picture" />
-            </div>
+            <h1>900 Degree Plastic to Diesel Reactor</h1>
+
+            <section aria-label="Newest Photos" class="gallery card">
+              <div class="carousel" data-carousel>
+                <ul data-slides>
+                  <li style="list-style: none" class="slide" data-active>
+                    <img
+                      src="..\src\Products\900_degree_reactor\IMG_20190618_124405.jpg"
+                      alt="900 Degree Plastic to Diesel Reactor Picture 1"
+                    />
+                  </li>
+
+                  <li style="list-style: none" class="slide">
+                    <img
+                      src="..\src\Products\900_degree_reactor\IMG_20190618_124425.jpg"
+                      alt="900 Degree Plastic to Diesel Reactor Picture 2"
+                    />
+                  </li>
+
+                  <li style="list-style: none" class="slide">
+                    <img
+                      src="..\src\Products\900_degree_reactor\IMG_20190618_165442.jpg"
+                      alt="900 Degree Plastic to Diesel Reactor Picture 3"
+                    />
+                  </li>
+
+                  <li style="list-style: none" class="slide">
+                    <img
+                      src="..\src\Products\900_degree_reactor\WhatsApp Image 2019-11-29 at 11.19.36 AM (1).jpeg"
+                      alt="900 Degree Plastic to Diesel Reactor Picture 4"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- <div class="card">
+              <img id="main-pic" src="..\src\Products\Rice\Rice_2.jpg" alt="Welding-Platform-picture" />
+            </div> -->
             <a class="btn" href="..\index.html#contact-scroll">Request additional information</a>
           </div>
           <div class="description">
-            <h1>Rice De-husking Machine</h1>
+            <h1>900 Degree Plastic to Diesel Reactor</h1>
             <div>
-              <p>
-                Sturdy and durable design, protects bran layer delicately. Supports the rightful need of brown rice and
-                has minimum breakage of rice granules. Best suited for rural businesses and Self Help groups as this
-                machine has a subsidy of 50% all over India.
-              </p>
-              <!-- <br /> -->
-              <h3>Technical specification:</h3>
+              <h3>General Specification:</h3>
               <ul>
-                <li>Capacity: 15-20 kg./hour</li>
-                <li>Hopper size: 20 kg./batch</li>
-                <li>Weight: ≈ 128 kg.</li>
-                <li>Electrical load: 1 HP, 230v AC, 3.3 Amps</li>
-                <li>Physical Dimentions: 2ft x 3ft x 4ft.</li>
+                <li>Electrically operated heaters for precise temperature control</li>
+                <li>Upto 75% volumetric yeild</li>
+                <li>All weather resistant</li>
+                <li>catalitic converter for converting plastics to hydrocarbons</li>
+                <li>Hydrocarbons can be used as fuel</li>
+              </ul>
+              <!-- <br /> -->
+              <h3>Technical Specifications:</h3>
+              <ul>
+                <li id="three-dots">Coming soon</li>
               </ul>
             </div>
           </div>
           <a class="btn" href="..\index.html#contact-scroll">Request additional information</a>
-        </div>
-      </div>
-
-      <div class="sources">
-        <h3>Download additional materials</h3>
-        <div class="download-flex">
-          <a href="..\src\Products\Rice\Technical_Mannual(Rice).pdf" class="card" download>
-            <img src="..\src\Icons\file-text.svg" alt="" />
-            <h4>Technical Manual in English</h4></a
-          >
-          <a href="..\src\Products\Rice\Climber Rice dehusking ICAR Coimbatore Certification.pdf" class="card" download>
-            <img src="..\src\Icons\certificate.svg" alt="" />
-            <h4>ICAR Coimbatore Certification</h4></a
-          >
-          <a href="..\src\Products\Rice\Rice De husking Machine Brochure English_3.1.2022.pdf" class="card" download>
-            <img src="..\src\Icons\file-text.svg" alt="" />
-            <h4>Brochure (English)</h4></a
-          >
-          <a href="..\src\Products\Rice\Marathi.pdf" class="card" download>
-            <img src="..\src\Icons\file-text.svg" alt="" />
-            <h4>Brochure (Marathi)</h4></a
-          >
         </div>
       </div>
     </div>
@@ -121,7 +134,7 @@
     </footer>
 
     <script>
-      localStorage.setItem('lastViewedProduct', '...');
+      localStorage.setItem('lastViewedProduct', 'Plastic Reactor');
     </script>
   </body>
 </html>
