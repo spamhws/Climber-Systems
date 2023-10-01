@@ -208,7 +208,7 @@
 }
 
 .side-logo {
-  width: clamp(20%, 250px, 80%);
+  width: clamp(30%, 250px, 80%);
   opacity: 0;
   margin: 24px;
   position: relative;
