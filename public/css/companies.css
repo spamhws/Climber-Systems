@@ -179,9 +179,6 @@ a.anchor {
 }
 
 @media only screen and (max-width: 700px) {
-  .content {
-    margin: 0 16px;
-  }
 
   .company>img {
     width: 100%;
