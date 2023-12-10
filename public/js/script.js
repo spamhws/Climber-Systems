@@ -42,3 +42,24 @@ window.addEventListener('scroll', reveal);
 
 // To check the scroll position on page load
 reveal();
+
+
+// Add this perfect information to Footer
+
+const copyRight = document.querySelector(".footer-limiter");
+
+const paragraphElement = copyRight.querySelector("p");
+
+const text = document.createTextNode(" and ");
+const link = document.createElement("a");
+link.setAttribute("target", "_blank");
+link.textContent = "Illia Sydorenko"
+link.href = "https://github.com/eliastikus";
+
+paragraphElement.appendChild(text)
+paragraphElement.appendChild(link)
+
+let paragraphText = paragraphElement.innerHTML;
+paragraphText = paragraphText.replace("2022", new Date().getFullYear());
+
+paragraphElement.innerHTML = paragraphText;

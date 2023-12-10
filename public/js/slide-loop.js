@@ -7,7 +7,11 @@ function dotsPressEvents(dots) {
 
   dots.forEach((dot, index) => {
     dot.addEventListener('click', (e) => {
-      if (!e.path[0].matches('.current')) {
+
+      // Traverse up the DOM tree to find the closest ancestor with the '.current' class.
+      const currentElement = e.target.closest('.current');
+
+      if (!currentElement) {
         let aim = index % 3;
         slideLoop(aim);
         loopRestart();
@@ -59,9 +63,12 @@ function handleGesture() {
   if (touchendX > touchstartX) {
     direction = -1;
   }
-  setTimeout(slideLoop, 1);
 
-  loopRestart();
+  if (Math.abs(touchendX - touchstartX) > 10) {
+    setTimeout(slideLoop, 1);
+
+    loopRestart();
+  }
 }
 
 slides.addEventListener('touchstart', (e) => {
@@ -70,7 +77,11 @@ slides.addEventListener('touchstart', (e) => {
 
 slides.addEventListener('touchend', (e) => {
   touchendX = e.changedTouches[0].screenX;
-  if (!e.path[0].matches('.dot')) {
+
+  // Check if the clicked element or its parent has the class '.dot'
+  if (!e.target.classList.contains('dot')) {
     handleGesture();
   }
 });
+
+
